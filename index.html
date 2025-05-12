@@ -65,16 +65,16 @@
             </section>
         </section>
     </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Innocent Saize, Mutare, Zimbabwe </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+    </script>
 
 </body>
-
-<footer>
-    <p>&copy; <span id="currentYear"></span> Innocent Saize, Mutare, Zimbabwe </p>
-    <p id="lastModified"></p>
-</footer>
-<script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
-</script>
 
 </html>
