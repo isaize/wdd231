@@ -3,12 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- This makes the page responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+    <!-- This is the title that appears in the browser tab -->
+    <title>Web And Computer Programming </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css"><!-- Reference to styles.css file -->
+    <script src="scripts/script.js" defer></script> <!-- Reference to JavaScript file -->
 </head>
 
 <body>
-    <h1>WDD 231 - Innocent</h1>
+    <header>
+        <!--  the actual path to my photo -->
+        <img src="images/isaize.png" alt="Innocent Saize" />
+        <!--  name displayed in a span -->
+        <span>Innocent Saize</span>
+    </header>
+
+    <nav>
+        
+            <!-- links in the navigation -->
+        <a href="index.html">Home</a>
+        <a href="chamber.html">Chamber</a>
+        <a href="final.html">Final</a>
+        <a href="https://github.com/isaize">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/InnocentSaize">LinkedIn</a>
+       
+    </nav>
+
+    <main>
+        <h1>Home</h1> <!-- Main title of the page -->
+        <section class="Course Work">
+            <h2>Course Work</h2>
+            <p> .</p> 
+            <p> .</p>
+            <p> .</p>
+        </section>
+
+        <section class="Mutare, Zimbabwe">
+            <h2>Mutare, Zimbabwe</h2>
+            <img src="images/mutare.jpg" alt="Mutare River">
+        </section>
+        <section>
+            <section class="Web and Computer Programming Certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="course-buttons">
+                    <button onclick="displayCourses('All')">All</button>
+                    <button onclick="displayCourses('WDD')">WDD</button>
+                    <button onclick="displayCourses('CSE')">CSE</button>
+                </div>
+                <div class="course-list">
+                    <button>CSE 110</button>
+                    <button>WDD 130</button>
+                    <button>CSE 210</button>
+                    <button>WDD 131</button>
+                    <button>WDD 231</button>
+                </div>
+            </section>
+        </section>
+    </main>
+   
 </body>
+
+<footer>
+    <p>&copy; <span id="currentYear"></span> Innocent Saize, Mutare, Zimbabwe</p>
+    <p id="lastModified"></p> <!-- This will show the last modified date -->
+</footer>
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+</script>
 
 </html>
