@@ -1,0 +1,209 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* Stack header and hero vertically */
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    /* Flex container for logo and nav */
+    align-items: center;
+    /* Center align items vertically */
+    padding: 10px 20px;
+    /* Padding around the header */
+    width: 100%;
+    /* Full width */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* Center logo vertically */
+}
+
+img {
+    width: 5%;
+    /* Adjust logo size */
+    height: auto;
+}
+
+.text {
+    margin-left: 5px;
+    /* Space between logo image and text */
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    /* Keep navigation items in a row */
+    gap: 15px;
+    /* Space between nav links */
+    margin-left: auto;
+    /* Push nav to the right */
+    padding-top: 0px;
+    /* Adjust top space to match logo */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(69, 47, 165);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /* Stack hero elements vertically */
+    align-items: center;
+    /* Center horizontally */
+    margin-top: 50px;
+    /* Space between header and hero image */
+    width: 100%;
+    /* Ensure header takes full width */
+}
+
+.hero img {
+    display: block;
+    /* Ensures the image takes up its own line */
+    max-width: 200%;
+    /* Ensure the image is responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 0 auto;
+    /* Center the image */
+}
+
+.grid {
+    display: flex;
+    /* Use flexbox to arrange items in a row */
+    justify-content: space-between;
+    /* Space items evenly */
+    align-items: stretch;
+    /* Ensure all items have equal height */
+    margin: 20px 0;
+    /* Add margin for spacing */
+}
+
+.Event,
+.current-weather,
+.weather-forecast {
+    flex: 1;
+    /* Allow each item to grow equally */
+    margin: 0 10px;
+    /* Add horizontal spacing between items */
+    padding: 20px;
+    /* Add padding for content */
+    border: 1px solid #646161;
+    /* Optional: Add border for visibility */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for depth */
+}
+
+h2 {
+    margin-top: 0;
+    /* Remove top margin from headings */
+}
+
+#member-cards {
+    display: flex;
+    /* Use flexbox to arrange items in a row */
+    justify-content: space-between;
+    /* Space items evenly */
+    align-items: stretch;
+    /* Ensure all items have equal height */
+    margin: 20px 0;
+    /* Add margin for spacing */
+}
+
+section {
+    display: flex;
+    /* Use flexbox for each section */
+    align-items: flex-start;
+    /* Align items at the top */
+    flex: 1;
+    /* Allow sections to grow equally */
+    margin: 0 10px;
+    /* Add horizontal spacing between sections */
+    padding: 10px;
+    /* Add padding for content */
+    border: 1px solid #ccc;
+    /* Optional: Add border for visibility */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for depth */
+}
+
+section img {
+    width: 100px;
+    /* Fixed width for images */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 2px;
+    /* Space between image and text */
+}
+
+section div {
+    margin-left: 2px;
+    /* Space between text and image */
+}
+
+h2 {
+    margin: 1px 0;
+    /* Margin for heading */
+}
+
+p {
+    margin: 0;
+    /* Remove margin from paragraphs */
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    /* Background color for the footer */
+    padding: 20px;
+    /* Padding around the footer */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.footer-address {
+    text-align: left;
+    /* Align address text to the left */
+    flex: 1;
+    /* Allow it to take available space */
+}
+
+.footer-links {
+    text-align: center;
+    /* Center the links */
+    flex: 1;
+    /* Allow it to take available space */
+}
+
+.footer-info {
+    text-align: right;
+    /* Align info text to the right */
+    flex: 1;
+    /* Allow it to take available space */
+}
+
+.footer-links a {
+    margin: 0 15px;
+    /* Spacing between links */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #0073e6;
+    /* Icon color */
+    font-size: 24px;
+    /* Size of the icons */
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+    /* Change color on hover */
+}

@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Business One",
+        "address": "123 Sakubva, Mutare",
+        "phone": "255-1234",
+        "website": "https://www.businessone.com",
+        "image": "images/business1.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Business Two",
+        "address": "456 Chikanga, Mutare",
+        "phone": "223-555-5678",
+        "website": "https://www.businesstwo.com",
+        "image": "images/business2.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Business 3",
+        "address": "45 Chikanga1, Mutare",
+        "phone": "223-5678",
+        "website": "https://www.businessthree.com",
+        "image": "images/business3.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Business 4",
+        "address": "400 Chikanga1, Mutare",
+        "phone": "5678",
+        "website": "https://www.businessfour.com",
+        "image": "images/business4.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Business 5",
+        "address": "2 Chikanga2, Mutare",
+        "phone": "223-555-5678",
+        "website": "https://www.businessfive.com",
+        "image": "images/business5.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Business 6",
+        "address": "45 Dangamvura, Mutare",
+        "phone": "223-555-5678",
+        "website": "https://www.businesssix.com",
+        "image": "images/business6.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Business 7",
+        "address": "45 Hobhouse, Mutare",
+        "phone": "223-555-5678",
+        "website": "https://www.businessseven.com",
+        "image": "images/business7.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Business 8",
+        "address": "45 Murambi, Mutare",
+        "phone": "223-555-5678",
+        "website": "https://www.businesseight.com",
+        "image": "images/business8.png",
+        "membershipLevel": 2
+    }
+]    

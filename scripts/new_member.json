@@ -1,0 +1,23 @@
+{
+    "family_name": "Saize",
+    "moved_in_date": "2024-5-24",
+    "number_of_people": 3,
+    "visited_by_bishopic": true,
+    "family_members":[
+        {
+            "name": "Innocent Saize",
+            "Gender": "male",
+            "Birthday": "2000-08-16"
+        },
+        {
+            "name": "Felex Saize",
+            "Gender": "male",
+            "Birthday": "2005-08-6"
+        },
+        {
+           "name": "Emannuel Saize",
+            "Gender": "male",
+            "Birthday": "2009-08-28"
+        }
+    ]
+}
