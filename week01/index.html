@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive student homepage built with HTML, CSS and JavaScript.">
+    <meta name="author" content="Innocent Saize">
+    <title>Course Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="images/android2.svg" alt="Site Logo Image" height="44" width="44">
+        <span class="site-name">Innocent Saize</span>
+
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation"></button>
+
+        <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber.html">Chamber Project</a>
+            <a href="Final.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main class="home-layout">
+        <h1>Home</h1>
+
+        <section class="panel about-panel">
+            <h2>About Me</h2>
+            <p>
+                Hey, I'm Innocent Saize, hailing from the beautiful city of Mutare, Zimbabwe 🌟.
+                I'm currently pursuing my Software Development degree at BYU-Idaho, and honestly, it's been an
+                incredible journey so far! I was a bit nervous before starting, but things have fallen into place, and
+                I'm loving every bit of it. Excited to see where this path takes me
+            </p>
+        </section>
+
+        <section class="panel photo-panel">
+            <h2>Student Photo</h2>
+            <img src="images/lab.webp" alt="Student portrait" class="student-photo">
+        </section>
+
+        <section class="panel courses-panel">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters" aria-label="Filter courses">
+                <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-button" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button type="button" class="filter-button" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+
+            <div id="course-container" class="course-container" aria-live="polite"></div>
+            <p class="credits-summary">The total credits for courses listed above is <strong
+                    id="total-credits">0</strong></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://facebook.com/innocentsaize" target="_blank">
+                <img src="images/facebook (1).svg" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://linkedin.com/innocentsaize" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+            <a href="https://wa.me/263771905851" target="_blank">
+                <img src="images/whatsapp (1).svg" alt="WhatsApp" width="40" height="40">
+            </a>
+            <a href="https://github.com/isaize/wdd231" target="_blank">
+                <img src="images/gitlab.svg" alt="GitHub" width="40" height="40">
+            </a>
+        </div>
+
+        <p>&copy; <span id="current-year"></span> | Innocent Saize | Zimbabwe</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>

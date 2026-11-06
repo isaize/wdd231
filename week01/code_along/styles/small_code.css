@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #dddd;
+    column-gap: 8px;
+
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2em;
+    color: #302f2fdd;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #302f2fdd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}

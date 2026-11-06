@@ -1,0 +1,72 @@
+/* Desktop layout.  */
+@media (min-width: 700px) {
+    .site-header {
+        grid-template-columns: 44px 1fr;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.2rem;
+        background: var(--dark);
+    }
+
+    .navigation a {
+        padding: 0.65rem 0.8rem;
+        border: 0;
+        white-space: nowrap;
+    }
+
+    .home-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: 0.7rem;
+        margin-top: 0.6rem;
+    }
+
+    .home-layout>h1,
+    .courses-panel {
+        grid-column: 1 / -1;
+    }
+
+    .about-panel,
+    .photo-panel {
+        align-self: stretch;
+    }
+
+    .about-panel p {
+        min-height: 170px;
+    }
+
+    .student-photo {
+        width: min(75%, 260px);
+    }
+
+    .course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .site-footer {
+        margin: 0.6rem auto 0;
+        width: min(100% - 1rem, 1200px);
+    }
+}
+
+@media (min-width: 1000px) {
+    .home-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: 0.8rem;
+    }
+
+    .about-panel p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,209 @@
+:root {
+    --dark: #252525;
+    --page: #203129;
+    --panel: #d6d6d6;
+    --light: #fff;
+    --gap: 0.65rem;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #202020;
+    background: var(--page);
+    line-height: 1.45;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem;
+    background: #fff;
+}
+
+.site-logo {
+    display: block;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.site-name {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #aaa;
+    background: #e5e5e5;
+    color: #111;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.6rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--dark);
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.7rem 0.6rem;
+    color: #fff;
+    text-decoration: none;
+    background: #303030;
+    border-bottom: 1px solid #111;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #484848;
+}
+
+.home-layout {
+    width: min(100% - 1rem, 1200px);
+    margin: 0.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+}
+
+.home-layout>h1 {
+    font-size: 1.65rem;
+    font-weight: 400;
+    background: #fff;
+    padding: 0.25rem 0.4rem;
+}
+
+.panel {
+    min-width: 0;
+    background: var(--panel);
+}
+
+.panel h2 {
+    padding: 0.45rem 0.5rem;
+    color: #fff;
+    background: var(--dark);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+}
+
+.about-panel p {
+    padding: 0.7rem;
+    min-height: 150px;
+    font-size: 0.95rem;
+}
+
+.photo-panel {
+    padding-bottom: 0.7rem;
+}
+
+.student-photo {
+    display: block;
+    width: min(75%, 400px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    margin: 0.8rem auto 0;
+    background: #aaa;
+}
+
+.courses-panel {
+    padding-bottom: 0.7rem;
+}
+
+.course-filters {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.6rem 0.4rem 0.35rem;
+}
+
+.filter-button {
+    flex: 1;
+    padding: 0.35rem 0.25rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: #bdbdbd;
+    color: #111;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background: #555;
+    color: #fff;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding: 0 0.4rem;
+}
+
+.course-card {
+    padding: 0.35rem 0.5rem;
+    border: 1px solid #999;
+    background: #bdbdbd;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.course-card.completed {
+    background: #d9ead3;
+    border-color: #6b9562;
+}
+
+.credits-summary {
+    padding: 0.55rem 0.4rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.site-footer {
+    margin-top: 0.6rem;
+    padding: 0.8rem;
+    background: #eee;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.site-footer p+p {
+    margin-top: 0.25rem;
+}
