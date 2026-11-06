@@ -121,7 +121,7 @@ body {
 
 .student-photo {
     display: block;
-    width: min(75%, 400px);
+    width: min(100%, 400px);
     aspect-ratio: 1 / 1;
     height: auto;
     object-fit: cover;
@@ -173,7 +173,7 @@ body {
 
 .course-card.completed {
     background: #d9ead3;
-    border-color: #6b9562;
+    border-color: #858a84;
 }
 
 .credits-summary {
