@@ -171,6 +171,17 @@ body {
     font-size: 0.85rem;
 }
 
+.course-filters {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-filters legend {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
 .course-card.completed {
     background: #d9ead3;
     border-color: #858a84;
