@@ -136,7 +136,14 @@ body {
 .course-filters {
     display: flex;
     gap: 0.4rem;
-    padding: 0.6rem 0.4rem 0.35rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-filters legend {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
 }
 
 .filter-button {
@@ -169,17 +176,6 @@ body {
     background: #bdbdbd;
     text-align: center;
     font-size: 0.85rem;
-}
-
-.course-filters {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.course-filters legend {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
 }
 
 .course-card.completed {
