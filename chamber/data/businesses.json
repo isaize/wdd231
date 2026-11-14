@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Business1",
+        "tagline": "Tag Line 1",
+        "email": "info1@gmail.com",
+        "phone": "800-555-1231",
+        "url": "mybusiness1.com",
+        "image": "images/business1.png"
+    },
+    {
+        "name": "Business2",
+        "tagline": "Tag Line 2",
+        "email": "info2@yahoo.com",
+        "phone": "800-555-1232",
+        "url": "mybusiness2.net",
+        "image": "images/business2.png"
+    },
+    {
+        "name": "Business3",
+        "tagline": "Tag Line 3",
+        "email": "info3@outlook.com",
+        "phone": "800-555-1233",
+        "url": "mybusiness3.io",
+        "image": "images/business3.png"
+    },
+    {
+        "name": "Business4",
+        "tagline": "Tag Line 4",
+        "email": "info4@zoho.com",
+        "phone": "800-555-1234",
+        "url": "mybusiness4.co",
+        "image": "images/business4.png"
+    },
+    {
+        "name": "Business5",
+        "tagline": "Tag Line 5",
+        "email": "info5@protonmail.com",
+        "phone": "800-555-1235",
+        "url": "mybusiness5.me",
+        "image": "images/business5.png"
+    },
+    {
+        "name": "Business6",
+        "tagline": "Tag Line 6",
+        "email": "info6@tmail.com",
+        "phone": "800-555-1236",
+        "url": "mybusiness6.tv",
+        "image": "images/business6.png"
+    },
+    {
+        "name": "Business7",
+        "tagline": "Tag Line 7",
+        "email": "info7@fastmail.com",
+        "phone": "800-555-1237",
+        "url": "mybusiness7.us",
+        "image": "images/business7.png"
+    },
+    {
+        "name": "Business8",
+        "tagline": "Tag Line 8",
+        "email": "info8@gmx.com",
+        "phone": "800-555-1238",
+        "url": "mybusiness8.biz",
+        "image": "images/business8.png"
+    },
+    {
+        "name": "Business9",
+        "tagline": "Tag Line 9",
+        "email": "info9@ymail.com",
+        "phone": "800-555-1239",
+        "url": "mybusiness9.info",
+        "image": "images/business9.png"
+    },
+    {
+        "name": "Business10",
+        "tagline": "Tag Line 10",
+        "email": "info10@aol.com",
+        "phone": "800-555-1240",
+        "url": "mybusiness10.org",
+        "image": "images/business10.png"
+    }
+]

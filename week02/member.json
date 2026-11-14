@@ -1,0 +1,28 @@
+{
+    "familyName": "Saize",
+    "moveInDate": "2025-06-24",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Westone Saize",
+            "gender": "Male",
+            "birthdate": "1991-05-12"
+        },
+        {
+            "name": "Matilda Saize",
+            "gender": "Female",
+            "birthdate": "1992-08-20"
+        },
+        {
+            "name": "Innocent Saize",
+            "gender": "Male",
+            "birthdate": "2000-08-16"
+        },
+        {
+            "name": "Felix Saize",
+            "gender": "Male",
+            "birthdate": "2012-11-10"
+        }
+    ]
+}

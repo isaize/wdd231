@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive student homepage built with HTML, CSS and JavaScript.">
+    <meta name="author" content="Innocent Saize">
+    <title>Mutare Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="faviconn.ico">
+
+    <!-- social media -->
+    <meta property="og:title" content="Course Home Page- Innocent Saize">
+    <meta property="og:description"
+        content="Discover the innovative world of business, understanding different opportunities under our chamber of commerce thats builds from  different expertise.">
+    <meta property="og:url" content="https://isaize.github.io/wdd231/index.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://isaize.github.io/wdd231/index.html/images/lab.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Course Home Page- Innocent Saize">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="images/chamber.jpeg" alt="Site Logo Image" height="44" width="44">
+        <span class="site-name">Mutare Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation"></button>
+        <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory">
+            <h1>Directory</h1>
+            <div class="view-toggle">
+                <button id="grid-btn">Grid</button>
+                <button id="list-btn">List</button>
+            </div>
+            <div class="business-grid" id="business-container">
+                <!-- Business cards will be injected here by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Mutare Chamber of Commerce</h3>
+        <div class="footer-left">
+
+            <p>199 Hebert Chitepo<br>Mutare, Zimbabwe</p>
+            <p>info@mutarechamber.org<br>(263) 555-2300</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://facebook.com/innocentsaize" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://linkedin.com/innocentsaize" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+            <a href="https://wa.me/263771905851" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="40" height="40">
+            </a>
+            <a href="https://github.com/isaize/wdd231" target="_blank">
+                <img src="images/gitlab.svg" alt="GitHub" width="40" height="40">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>&copy; <span id="current-year"></span> | Innocent Saize | Zimbabwe</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+</html>
