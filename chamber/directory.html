@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A responsive student homepage built with HTML, CSS and JavaScript.">
     <meta name="author" content="Innocent Saize">
-    <title>Mutare Chamber of Commerce</title>
+    <title>Mutare Chamber of Commerce Directory</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,17 +22,18 @@
         content="Discover the innovative world of business, understanding different opportunities under our chamber of commerce thats builds from  different expertise.">
     <meta property="og:url" content="https://isaize.github.io/wdd231/index.html">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://isaize.github.io/wdd231/index.html/images/lab.webp">
-    <meta property="og:type" content="website">
     <meta property="og:site_name" content="Course Home Page- Innocent Saize">
 
-    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
     <script src="scripts/chamber.js" defer></script>
 </head>
 
 <body>
     <header class="site-header">
-        <img src="images/chamber.jpeg" alt="Site Logo Image" height="44" width="44">
+        <img src="images/mutare.png" alt="Site Logo Image" height="44" width="44">
         <span class="site-name">Mutare Chamber of Commerce</span>
         <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false"
             aria-controls="primary-navigation"></button>
@@ -43,7 +44,6 @@
             <a href="discover.html">Discover</a>
         </nav>
     </header>
-
     <main>
         <section class="directory">
             <h1>Directory</h1>
@@ -56,15 +56,12 @@
             </div>
         </section>
     </main>
-
     <footer>
-        <h3>Mutare Chamber of Commerce</h3>
+        <h2>Mutare Chamber of Commerce</h2>
         <div class="footer-left">
-
             <p>199 Hebert Chitepo<br>Mutare, Zimbabwe</p>
             <p>info@mutarechamber.org<br>(263) 555-2300</p>
         </div>
-
         <div class="social-links">
             <a href="https://facebook.com/innocentsaize" target="_blank">
                 <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
@@ -84,5 +81,6 @@
             <p id="last-modified"></p>
         </div>
     </footer>
+</body>
 
 </html>
