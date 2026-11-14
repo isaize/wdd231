@@ -20,7 +20,7 @@ const listBtn = document.getElementById('list-btn');
 // Fetch business data from JSON file
 async function fetchBusinessData() {
     try {
-        const response = await fetch('data/member.json');
+        const response = await fetch('data/members.json');
         const data = await response.json();
         return data;
     } catch (error) {
