@@ -127,9 +127,10 @@ main();
 
 // HOME PAGE JS
 
+
 // SELECT HTML ELEMENTS
 const myCity = document.querySelector('#city');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherIconContainer = document.querySelector('#weather-icon-container');
 const temperature = document.querySelector('#temperature');
 const description = document.querySelector('#description');
 const forecastElement = document.querySelector('#forecast');
@@ -165,9 +166,18 @@ function displayResults(data) {
   myCity.textContent = data.name;
   description.textContent = data.weather[0].description;
   temperature.innerHTML = `${data.main.temp}&deg;F`;
+
+  // Get weather icon URL
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', data.weather[0].description);
+
+  // Create weather image dynamically
+  const weatherIcon = document.createElement('img');
+  weatherIcon.src = iconsrc;
+  weatherIcon.alt = data.weather[0].description;
+
+  // Clear previous icon and display new icon
+  weatherIconContainer.innerHTML = "";
+  weatherIconContainer.appendChild(weatherIcon);
 }
 
 // FETCH FORECAST
@@ -237,7 +247,8 @@ function displayForecast(forecastData) {
   });
 }
 
-// DISPLAY COMPANY SPOTLIGHTS
+
+// DISPLAY SPOTLIGHTS
 function displaySpotlights(businessData) {
   const spotlightContainer = document.querySelector("#spotlights");
 
